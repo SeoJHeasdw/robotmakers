@@ -16,7 +16,7 @@ spring:
         - id: install
           uri: http://localhost:8083
           predicates:
-            - Path=/deliveries/**, 
+            - Path=/installs/**, 
         - id: robot
           uri: http://localhost:8084
           predicates:
@@ -52,7 +52,7 @@ spring:
         - id: install
           uri: http://install:8080
           predicates:
-            - Path=/deliveries/**, 
+            - Path=/installs/**, 
         - id: robot
           uri: http://robot:8080
           predicates:

@@ -38,7 +38,7 @@ mvn spring-boot:run
 ```
 - install
 ```
- http :8088/deliveries id="id" robotName="robotName" qty="qty" orderId="orderId" address="address" status="status" 
+ http :8088/installs id="id" robotName="robotName" qty="qty" orderId="orderId" address="address" status="status" 
 ```
 - robot
 ```

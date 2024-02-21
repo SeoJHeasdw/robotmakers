@@ -36,7 +36,7 @@ public class Inventory {
     }
 
     //<<< Clean Arch / Port Method
-    public static void decreaseStock(DeliveryStarted deliveryStarted) {
+    public static void decreaseStock(InstallStarted installStarted) {
         //implement business logic here:
 
         /** Example 1:  new item 
@@ -49,7 +49,7 @@ public class Inventory {
 
         /** Example 2:  finding and process
         
-        repository().findById(deliveryStarted.get???()).ifPresent(inventory->{
+        repository().findById(installStarted.get???()).ifPresent(inventory->{
             
             inventory // do something
             repository().save(inventory);

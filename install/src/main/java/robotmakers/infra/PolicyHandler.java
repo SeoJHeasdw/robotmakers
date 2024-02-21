@@ -18,7 +18,7 @@ import robotmakers.domain.*;
 public class PolicyHandler {
 
     @Autowired
-    DeliveryRepository deliveryRepository;
+    InstallRepository installRepository;
 
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
@@ -27,16 +27,16 @@ public class PolicyHandler {
         value = KafkaProcessor.INPUT,
         condition = "headers['type']=='OrderPlaced'"
     )
-    public void wheneverOrderPlaced_StartDelivery(
+    public void wheneverOrderPlaced_StartInstall(
         @Payload OrderPlaced orderPlaced
     ) {
         OrderPlaced event = orderPlaced;
         System.out.println(
-            "\n\n##### listener StartDelivery : " + orderPlaced + "\n\n"
+            "\n\n##### listener StartInstall : " + orderPlaced + "\n\n"
         );
 
         // Sample Logic //
-        Delivery.startDelivery(event);
+        Install.startInstall(event);
     }
 }
 //>>> Clean Arch / Inbound Adaptor

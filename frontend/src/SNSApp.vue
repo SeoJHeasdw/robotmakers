@@ -48,13 +48,13 @@
 
                     <v-list-item
                         class="px-2"
-                        key="deliveries"
-                        to="/installs/deliveries"
+                        key="installs"
+                        to="/installs/installs"
                         @click="changeUrl()"
                         color="primary"
                         style="font-weight:700;"
                     >
-                        Delivery
+                        Install
                     </v-list-item>
 
 
@@ -156,10 +156,10 @@ export default {
                 ImageUrl: '',
             },
             { 
-                title: 'Delivery', 
+                title: 'Install', 
                 description: '', 
-                key: 'deliveries', 
-                route: '/installs/deliveries',
+                key: 'installs', 
+                route: '/installs/installs',
                 ImageUrl: '',
             },
             { 

@@ -8,8 +8,8 @@ Vue.use(Router);
 import OrderOrderManager from "./components/listers/OrderOrderCards"
 import OrderOrderDetail from "./components/listers/OrderOrderDetail"
 
-import InstallDeliveryManager from "./components/listers/InstallDeliveryCards"
-import InstallDeliveryDetail from "./components/listers/InstallDeliveryDetail"
+import InstallInstallManager from "./components/listers/InstallInstallCards"
+import InstallInstallDetail from "./components/listers/InstallInstallDetail"
 
 import RobotInventoryManager from "./components/listers/RobotInventoryCards"
 import RobotInventoryDetail from "./components/listers/RobotInventoryDetail"
@@ -31,14 +31,14 @@ export default new Router({
             },
 
             {
-                path: '/installs/deliveries',
-                name: 'InstallDeliveryManager',
-                component: InstallDeliveryManager
+                path: '/installs/installs',
+                name: 'InstallInstallManager',
+                component: InstallInstallManager
             },
             {
-                path: '/installs/deliveries/:id',
-                name: 'InstallDeliveryDetail',
-                component: InstallDeliveryDetail
+                path: '/installs/installs/:id',
+                name: 'InstallInstallDetail',
+                component: InstallInstallDetail
             },
 
             {
